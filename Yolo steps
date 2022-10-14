@@ -1,0 +1,8 @@
+1. Follw the steps mentioned here for initial yolo setip:- https://pjreddie.com/darknet/yolo/
+
+2. Follow steps from darknet installtion doc to know what and all changes need to do in config file and all
+
+3. Training yolo- use below command
+./darknet detector train training/trainer.data training/yolov3-tiny.cfg darknet53.conv.74
+
+4. Prediction:- ./darknet detector test training/trainer.data training/yolov3-tiny.cfg training/yolov3-tiny_900.weights data/cube2.jpg
